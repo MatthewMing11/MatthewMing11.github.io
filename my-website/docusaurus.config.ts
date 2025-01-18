@@ -10,16 +10,17 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://matthewming11.github.io',
+  url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'matthewming11', // Usually your GitHub org/user name.
-  projectName: 'Portfolio-Website', // Usually your repo name.
-  trailingSlash:False,
+  organizationName: 'MatthewMing11', // Usually your GitHub org/user name.
+  projectName: 'MatthewMing11.github.io', // Usually your repo name.
+  deploymentBranch:'gh-pages',
+  trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
