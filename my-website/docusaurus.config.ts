@@ -5,9 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
+  title: 'Matthew Ming',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.ico', //figure out why the browser ico doesn't appear
 
   // Set the production url of your site here
   url: 'https://matthewming11.github.io/',
@@ -72,18 +72,32 @@ const config: Config = {
       title: 'My Site',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/browser-svgrepo-com.svg',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docs',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          // type: 'docSidebar',
+          // sidebarId: 'projSidebar',
+          to:"/projects",
+          position: 'left',
+          label: 'Projects',
+        },
+        {
+          // type: 'docSidebar',
+          // sidebarId: 'simSidebar',
+          to:"/simulations",
+          position: 'left',
+          label: 'Simulations',
+        },
+        // {to: '/blog', label: 'Blog', position: 'left'}, 
+        {
+          href: 'https://github.com/MatthewMing11',
           label: 'GitHub',
           position: 'right',
         },
@@ -93,46 +107,37 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Pages',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Docs',
+              to: '/docs/intro', 
+            },
+            {
+              label: 'Projects',
+              to: '/projects', 
+            },
+            {
+              label: 'Simulations',
+              to: '/simulations',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Links',
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/MatthewMing11',
+            },
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/in/matthew-ming/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Matthew Ming, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
