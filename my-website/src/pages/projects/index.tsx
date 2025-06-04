@@ -11,15 +11,28 @@ const projs = [
     {
         title:"My Website",
         website:"https://matthewming11.github.io/",
-        preview:require("@site/static/img/Placeholder.png").default,
+        preview:require("@site/static/img/portfolio.png").default,
         description:(
             <>
             The website that holds my projects and simulations.
             </>
         ),
-        source:"http://localhost:3000/docs/projects/website",//change this for production
+        // source:"http://localhost:3000/docs/projects/website",//change this for production
+        source:"https://matthewming11.github.io/docs/projects/website",
         tags:["typescript","react"]
-    }
+    },
+    {
+      title:"Calculator",
+      website:"",
+      preview:require("@site/static/img/Placeholder.png").default,
+      description:(
+          <>
+          Simple calculator desktop app.
+          </>
+      ),
+      source:"https://matthewming11.github.io/docs/projects/calculator",//change this for production
+      tags:["C#",".NET"]
+  },
 ]
 function ProjectHeader() {
 //   const {siteConfig} = useDocusaurusContext();

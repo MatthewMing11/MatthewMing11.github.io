@@ -10,17 +10,32 @@ import styles from './../index.module.css';
 const sims = [
     {
         title:"Perlin Wave",
-        website:"https://matthewming11.github.io/",
-        preview:require("@site/static/img/Placeholder.png").default,
+        website:"https://matthewming11.github.io/",// change to proper route once setup
+        preview:require("@site/static/img/wave.png").default,
         description:(
             <>
             WIP
             Animation of wave grid using Perlin Noise.
             </>
         ),
-        source:"http://localhost:3000/docs/simulations/wave",//change this for production
+        // source:"http://localhost:3000/docs/simulations/wave",//change this for production
+        source:"https://matthewming11.github.io/docs/simulations/wave",
         tags:["typescript","react","ThreeJS"]
-    }
+    },
+    {
+      title:"Mitchell Martin Sphere",
+      website:"https://matthewming11.github.io/",// change to proper route once steup
+      preview:require("@site/static/img/sphere.png").default,
+      description:(
+          <>
+          WIP
+          Animation of wireframe Sphere from Mitchell Martin website.
+          </>
+      ),
+      // source:"http://localhost:3000/docs/simulations/wave",//change this for production
+      source:"https://matthewming11.github.io/docs/simulations/sphere",
+      tags:["typescript","react","ThreeJS"]
+  }
 ]
 function SimulationHeader() {
 //   const {siteConfig} = useDocusaurusContext();

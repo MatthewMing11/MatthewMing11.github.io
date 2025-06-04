@@ -34,7 +34,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/macbook-pro-svgrepo-com.svg').default,
     description: (
       <>
-        Python, C/C++, Typescript, React, SQL(PostgreSQL)
+        Python, C/C++, Typescript, React, SQL(PostgreSQL), C#(.NET)
       </>
     ),
   },
